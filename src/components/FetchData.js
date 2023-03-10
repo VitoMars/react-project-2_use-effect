@@ -14,22 +14,20 @@ const FetchData = () => {
   }, []);
 
   return (
-    <div className="">
-      <ul className="users">
-        {users.map((user) => {
-          const { id, login, avatar_url: img, html_url } = user;
-          return (
-            <li key={id} className="shadow">
-              <img src={img} alt={login} />
-              <div>
-                <h5>{login}</h5>
-                <a href={html_url}>Profilo</a>
-              </div>
-            </li>
-          );
-        })}
-      </ul>
-    </div>
+    <ul className="users">
+      {users.map((user) => {
+        const { id, login, avatar_url: img, html_url } = user;
+        return (
+          <li key={id} className="shadow">
+            <img src={img} alt={login} />
+            <div>
+              <h5>{login}</h5>
+              <a href={html_url}>Profilo</a>
+            </div>
+          </li>
+        );
+      })}
+    </ul>
   );
 };
 
