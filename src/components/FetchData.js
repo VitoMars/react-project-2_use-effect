@@ -7,7 +7,6 @@ const FetchData = () => {
   const getData = async () => {
     const response = await axios.get(url);
     setUsers(response.data);
-    console.log(response.data);
   };
   useEffect(() => {
     getData();
