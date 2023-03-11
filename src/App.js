@@ -1,4 +1,3 @@
-import "./App.css";
 import React from "react";
 import CleanUp from "./components/CleanUp";
 import FetchData from "./components/FetchData";
